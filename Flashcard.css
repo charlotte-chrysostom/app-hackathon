@@ -28,7 +28,7 @@ button{
 .add-flashcard-con button{
     font-size: 18px;
 
-    background-color: #2a2a2a;
+    background-color: #2C3E50;
     color: #fff;
     padding: 15px 20px;
     width: 100%;
@@ -55,7 +55,7 @@ button{
 }
 .question-container h2 {
     font-size: 30px;
-    color: #2a2a2a;
+    color: #2C3E50;
     font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
@@ -91,7 +91,7 @@ button{
     justify-self: flex-end;
 }
 label{
-    color: #2a2a2a;
+    color: #2C3E50;
     font-weight: 600;
     margin-bottom: 0.3em;
 }
@@ -100,7 +100,7 @@ textarea{
     padding: 0.7em 0.5em;
     border: 2px solid #ccc;
     outline: none;
-    color: #2a2a2a;
+    color: #2C3E50;
     border-radius: 5px;
     resize: none;
 }
@@ -108,11 +108,11 @@ textarea:not(:last-child) {
     margin-bottom: 1.2em;
 }
 textarea:focus {
-    border-color: #2a2a2a; 
+    border-color: #2C3E50; 
 }
 #save-btn {
     font-size: 18px;
-    background-color: #2a2a2a;
+    background-color: #2C3E50;
     color: #fff;
     padding: 15px 20px;
     border-radius: 5px;
@@ -135,16 +135,16 @@ textarea:focus {
 .question-div {
     margin-bottom: 0.5em;
     font-weight: 500;
-    color: #2a2a2a
+    color: #2C3E50
 }
 .answer-div {
     margin-top: 1em;
     font-weight: 400;
-    color: #2a2a2a;
+    color: #2C3E50;
 }
 .show-hide-btn{
     display: block;
-    background-color: #2a2a2a;
+    background-color: #2C3E50;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -162,7 +162,7 @@ textarea:focus {
     font-size: 16px;
 }
 .edit{
-    color: #2a2a2a;
+    color: #2C3E50;
 }
 .delete {
     color: red;
@@ -189,13 +189,3 @@ textarea:focus {
     }
 }
     /* End of Flashcard */
-h3{
-   border: 3px solid;
-   border-radius: 10px; 
-}
-
-
-
-h1{
-    text-align: center;
-}
