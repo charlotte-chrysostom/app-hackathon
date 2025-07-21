@@ -2,3 +2,27 @@ a{
     margin-right: 50px;
     margin-left: 50px;
 }
+
+
+#Quotes1 {
+  background-color: lightgrey;
+  width: 800px;
+  border: 15px solid darkblue;
+  padding: 50px;
+  margin: 20px;
+  font-size: 25px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quote {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+
+h2{
+  margin-left: auto;
+  margin-right: auto;
+}
