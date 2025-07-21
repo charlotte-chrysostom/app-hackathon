@@ -5,7 +5,7 @@ const answer = document.getElementById("answer");
 const errorMessage = document.getElementById("error");
 const addQuestion = document.getElementById("add-flashcard");
 const closeBtn = document.getElementById("close-btn");
-let editBool = false;
+let editBool = false;  // if still doesn't work, try flase //
 
 addQuestion.addEventListener("click", () => {
     container.classList.add("hide");
@@ -18,25 +18,26 @@ closeBtn.addEventListener(
     "click",
     (submitQuestion = () => {
         editBool = false;
-        tempQuestion = addQuestion.value.trim();
-        rempAnswer = answer.value.trim();
+        tempQuestion = question.value.trim();
+        tempAnswer = answer.value.trim();
         if(!tempQuestion || tempAnswer){
             errorMessage.classList.remove("hide");
-        }else
+        }else{
           container.classList.remove("hide");
           errorMessage.classList.add("hide");
-          viewList();
-          addQuestion.value = "";
+          viewlist();
+          question.value = "";
           answer.value = "";
+        }
     })
 );
 
 function viewlist(){
-    var lisrCard = document.getElementsByClassName("card-list-container");
+    var listCard = document.getElementsByClassName("card-list-container");
     var div = document.createElement("div");
     div.classList.add("card");
     div.innerHTML +=
-    <p class="question-div">${addQuestion.value}</p> ;
+    <p class="question-div">${question.value}</p> ;
     var displayAnswer = document.createElement("p");
     displayAnswer.classList.add("answer-div", "hide");
     displayAnswer.innerText = answer.value;
@@ -74,7 +75,7 @@ function viewlist(){
         if (edit){
             let parentAns = parentDiv.querySelector(".answer-div").innerText;
             answer.value = parentAns;
-            addQuestion.value = parentQuestion;
+            question.value = parentQuestion;
             disableButtons(true);
         }
     }
