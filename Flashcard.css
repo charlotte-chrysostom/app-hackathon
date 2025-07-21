@@ -189,3 +189,13 @@ textarea:focus {
     }
 }
     /* End of Flashcard */
+h3{
+   border: 3px solid;
+   border-radius: 10px; 
+}
+
+
+
+h1{
+    text-align: center;
+}
