@@ -6,21 +6,3 @@ h3{
 h1{
     text-align: center;
 }
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-.search-container{
-    margin-top: 100px;
-    position:relative;
-}
-
-.search-container input{
-    width: 350px;
-    font-size: 18px;
-    border-radius: 10px;
-    border: Solid;
-}
