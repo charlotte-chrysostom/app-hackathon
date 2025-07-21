@@ -1,12 +1,12 @@
 const container = document.querySelector(".container");
-const addQuestionCard = document.getElementById("add-question-ca"); // Corrected ID
+const addQuestionCard = document.getElementById("add-question-ca");
 const cardButton = document.getElementById("save-btn");
-const question = document.getElementById("question"); // Added declaration for question
+const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 const errorMessage = document.getElementById("error");
-const addFlashcardBtn = document.getElementById("add-flashcard"); // Renamed for clarity
+const addFlashcardBtn = document.getElementById("add-flashcard");
 const closeBtn = document.getElementById("close-btn");
-const cardListContainer = document.querySelector(".card-list-container"); // Get the card list container
+const cardListContainer = document.querySelector(".card-list-container");
 let editBool = false;
 let currentEditCard = null; // To keep track of the card being edited
 
@@ -22,7 +22,7 @@ addFlashcardBtn.addEventListener("click", () => {
     disableButtons(false); // Enable buttons when adding a new card
 });
 
-// Event listener for "Close" button (x mark)
+// Event listener for close button 
 closeBtn.addEventListener("click", () => {
     addQuestionCard.classList.add("hide"); // Hide the add/edit question card
     container.classList.remove("hide"); // Show the main container
@@ -86,7 +86,7 @@ function createFlashcard(questionText, answerText) {
     div.appendChild(displayAnswer);
 
     let buttonsCon = document.createElement("div");
-    buttonsCon.classList.add("button-con"); // Corrected class name
+    buttonsCon.classList.add("button-con");
 
     // Edit Button
     let editButton = document.createElement("button");
