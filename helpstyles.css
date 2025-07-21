@@ -1,0 +1,35 @@
+title{
+    color: #2c3e50
+}
+
+h2{
+    text-align: center;
+    color:goldenrod
+}
+h4{
+    text-align: center;
+    color:#3498db
+}
+p{
+    text-align: center;
+}
+
+*{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+  
+.search-container{
+    margin-top: 50px;
+    position: relative;
+}
+
+.search-container input{
+    width:300px;
+    height: 25px;
+    font-size: 18px;
+    border-radius: 10px;
+}
