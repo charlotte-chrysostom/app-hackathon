@@ -11,11 +11,18 @@
  <div id="">
    <div id="quote">Click Me for A Quiz Question</div>
       <div id="author"></div>
-      <button onclick="getQuiz()">Click Me!</button>
+      <label for="cat">Choose a category:</label>
+        
+        <select name="cat" id="cat">
+        <option value="Linux">Linux</option>
+        <option value="Docker">Docker</option>
+        <option value="DevOps">DevOps</option>
+        </select>
+        <button onclick="getQuiz()">Get quiz</button>
 </div>
      
 
 
     
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="Quiz.js"></script>
     </div>
