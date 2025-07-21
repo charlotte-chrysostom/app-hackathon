@@ -5,7 +5,7 @@ const answer = document.getElementById("answer");
 const errorMessage = document.getElementById("error");
 const addQuestion = document.getElementById("add-flashcard");
 const closeBtn = document.getElementById("close-btn");
-let editBool = false;  // if still doesn't work, try flase //
+let editBool = flase;
 
 addQuestion.addEventListener("click", () => {
     container.classList.add("hide");
