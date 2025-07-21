@@ -1,6 +1,6 @@
 /* Start of Flashcard */
 
-*{
+*{ /* Applied to all elements */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,18 +9,18 @@
 body{
     background-color: #ccc;
 }
-.container{
+.container{ /* Keeps it responsive and looking good on different devices */
     width: 90vw;
     max-width: 62.5em;
     position: relative;
     margin: auto;
 }
-.add-flashcard-con{
+.add-flashcard-con{ /* Styles the container for our add flashcard button */
     display: flex;
     justify-content: flex-end;
     padding: 1.2em 1em;
 }
-button{
+button{ 
     border: none;
     outline: none;
     cursor: pointer;
@@ -35,10 +35,10 @@ button{
     font-weight: 500;
     border-radius: 5px;
 }
-#card-con{
+#card-con{ /* Styles the container for our flashcards */
     margin-top: 1em;
 }
-.question-container{
+.question-container{ /* Styling the container for adding new flashcards */
     width: 90vw;
     max-width: 34em;
     display: flex;
@@ -66,7 +66,7 @@ button{
     gap: 1em;
     margin-bottom: 1em;
 }
-.error-con {
+.error-con { /* Error message for if the user tries to enter with blank fields  */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +75,7 @@ button{
     color: red;
     font-weight: 400;
 }
-.fa-xmark {
+.fa-xmark { /* The close button out of the add flashcards pop-up  */
     font-size: 1.4em;
     background-color: red;
     height: 1.8em;
@@ -110,7 +110,7 @@ textarea:not(:last-child) {
 textarea:focus {
     border-color: #2C3E50; 
 }
-#save-btn {
+#save-btn { /* Styling for the save button */
     font-size: 18px;
     background-color: #2C3E50;
     color: #fff;
@@ -118,7 +118,7 @@ textarea:focus {
     border-radius: 5px;
     font-weight: 600;
 }
-.card-list-container{
+.card-list-container{ /* Styles the container for displaying multiple flashcards in a grid layout  */
     display:grid;
     padding: 0.2em;
     gap: 1.5em;
@@ -130,7 +130,7 @@ textarea:focus {
 }
 .question-div,
 .answer-div{
-    text-align: justify;
+    text-align: center;
 }
 .question-div {
     margin-bottom: 0.5em;
@@ -142,7 +142,7 @@ textarea:focus {
     font-weight: 400;
     color: #2C3E50;
 }
-.show-hide-btn{
+.show-hide-btn{ /* Styling the show/hide button */
     display: block;
     background-color: #2C3E50;
     color: #fff;
@@ -172,14 +172,14 @@ textarea:focus {
     display: none;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px){ /* To adjust the layout for smaller screens */
     .card-list-container{
         grid-template-columns: 1fr 1fr;
         gap: 0.8em;
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px){ /* To adjust the layout for smaller screens */
     body{
        font-size: 14px; 
     }
