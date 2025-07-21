@@ -3,8 +3,17 @@ h3{
    border-radius: 10px; 
 }
 
-
-
 h1{
     text-align: center;
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.search-container{
+    margin-top: 100px;
+    position:relative;
 }
