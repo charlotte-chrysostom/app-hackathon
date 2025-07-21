@@ -11,11 +11,9 @@ function getQuote() {
         }
         return response.json();
     })
-    .then(data=>{
+    .then(data=> {
         console.log(data);
-        outputElement.textContent=JSON.stringify(data.quote);
-
-        
+        document.getElementById("quote").textContent = data.quote;
     })
     .catch(error=> {
         console.error('Error:',error);
