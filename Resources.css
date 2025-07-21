@@ -1,0 +1,8 @@
+body {
+    /* add some colour using hex colour codes */
+    --primary-color: #2c3e50;
+    accent-color: #FFC000;
+    background-color: #FFFFFF;
+    border-top-color: #3498db;
+    -webkit-text-fill-color: #2C3E50;
+}

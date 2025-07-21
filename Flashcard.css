@@ -1,6 +1,6 @@
 /* Start of Flashcard */
 
-*{
+*{ /* Applied to all elements */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,18 +9,18 @@
 body{
     background-color: #ccc;
 }
-.container{
+.container{ /* Keeps it responsive and looking good on different devices */
     width: 90vw;
     max-width: 62.5em;
     position: relative;
     margin: auto;
 }
-.add-flashcard-con{
+.add-flashcard-con{ /* Styles the container for our add flashcard button */
     display: flex;
     justify-content: flex-end;
     padding: 1.2em 1em;
 }
-button{
+button{ 
     border: none;
     outline: none;
     cursor: pointer;
@@ -28,17 +28,17 @@ button{
 .add-flashcard-con button{
     font-size: 18px;
 
-    background-color: #2a2a2a;
+    background-color: #2C3E50;
     color: #fff;
     padding: 15px 20px;
     width: 100%;
     font-weight: 500;
     border-radius: 5px;
 }
-#card-con{
+#card-con{ /* Styles the container for our flashcards */
     margin-top: 1em;
 }
-.question-container{
+.question-container{ /* Styling the container for adding new flashcards */
     width: 90vw;
     max-width: 34em;
     display: flex;
@@ -55,7 +55,7 @@ button{
 }
 .question-container h2 {
     font-size: 30px;
-    color: #2a2a2a;
+    color: #2C3E50;
     font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
@@ -66,7 +66,7 @@ button{
     gap: 1em;
     margin-bottom: 1em;
 }
-.error-con {
+.error-con { /* Error message for if the user tries to enter with blank fields  */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +75,7 @@ button{
     color: red;
     font-weight: 400;
 }
-.fa-xmark {
+.fa-xmark { /* The close button out of the add flashcards pop-up  */
     font-size: 1.4em;
     background-color: red;
     height: 1.8em;
@@ -91,7 +91,7 @@ button{
     justify-self: flex-end;
 }
 label{
-    color: #2a2a2a;
+    color: #2C3E50;
     font-weight: 600;
     margin-bottom: 0.3em;
 }
@@ -100,7 +100,7 @@ textarea{
     padding: 0.7em 0.5em;
     border: 2px solid #ccc;
     outline: none;
-    color: #2a2a2a;
+    color: #2C3E50;
     border-radius: 5px;
     resize: none;
 }
@@ -108,17 +108,17 @@ textarea:not(:last-child) {
     margin-bottom: 1.2em;
 }
 textarea:focus {
-    border-color: #2a2a2a; 
+    border-color: #2C3E50; 
 }
-#save-btn {
+#save-btn { /* Styling for the save button */
     font-size: 18px;
-    background-color: #2a2a2a;
+    background-color: #2C3E50;
     color: #fff;
     padding: 15px 20px;
     border-radius: 5px;
     font-weight: 600;
 }
-.card-list-container{
+.card-list-container{ /* Styles the container for displaying multiple flashcards in a grid layout  */
     display:grid;
     padding: 0.2em;
     gap: 1.5em;
@@ -130,21 +130,21 @@ textarea:focus {
 }
 .question-div,
 .answer-div{
-    text-align: justify;
+    text-align: center;
 }
 .question-div {
     margin-bottom: 0.5em;
     font-weight: 500;
-    color: #2a2a2a
+    color: #2C3E50
 }
 .answer-div {
     margin-top: 1em;
     font-weight: 400;
-    color: #2a2a2a;
+    color: #2C3E50;
 }
-.show-hide-btn{
+.show-hide-btn{ /* Styling the show/hide button */
     display: block;
-    background-color: #2a2a2a;
+    background-color: #2C3E50;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -162,7 +162,7 @@ textarea:focus {
     font-size: 16px;
 }
 .edit{
-    color: #2a2a2a;
+    color: #2C3E50;
 }
 .delete {
     color: red;
@@ -172,14 +172,14 @@ textarea:focus {
     display: none;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px){ /* To adjust the layout for smaller screens */
     .card-list-container{
         grid-template-columns: 1fr 1fr;
         gap: 0.8em;
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px){ /* To adjust the layout for smaller screens */
     body{
        font-size: 14px; 
     }
