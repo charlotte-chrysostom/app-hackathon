@@ -1,0 +1,190 @@
+/* Start of Flashcard */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #ccc;
+}
+.container{
+    width: 90vw;
+    max-width: 62.5em;
+    position: relative;
+    margin: auto;
+}
+.add-flashcard-con {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2em 1em;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.add-flashcard-con button{
+    font-size: 18px;
+
+    background-color: #2a2a2a;
+    color: #fff;
+    width: 100%;
+    font-weight:500;
+    border-radius: 5px;
+}
+#card-con{
+    margin-top: 1em;
+}
+.question-container{
+    width: 90vw;
+    max-width: 34em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    position: absolute;
+    transform: transplate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em 2em;
+    border-radius: 5px;
+    box-shadow: 0 1em 2em rgba(28, 0, 80, 0.1);
+}
+.question-container h2 {
+    font-size: 30px;
+    color: #2a2a2a;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.error-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#error {
+    color: red;
+    font-weight: 400;
+}
+.fa-xmark {
+    font-size: 1.4em;
+    background-color: red;
+    height: 1.8em;
+    width: 1.8em;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-self: flex-end;
+}
+label{
+    color: #2a2a2a;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+textarea{
+    width: 100%;
+    padding: 0.7em 0.5em;
+    border: 2px solid #ccc;
+    outline: none;
+    color: #2a2a2a;
+    border-radius: 5px;
+    resize: none;
+}
+textarea:not(:last-child) {
+    margin-bottom: 1.2em;
+}
+textarea:focus {
+    border-color: #2a2a2a; 
+}
+#save-btn {
+    font-size: 18px;
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.card-list-container{
+    display:grid;
+    padding: 0.2em;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+    background-color: #fff;
+    box-shadow: 0 0.4em 1.2em rgba(28, 0, 80, 0.8);
+}
+.question-div,
+.answer-div{
+    text-align: justify;
+}
+.question-div {
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    color: #2a2a2a
+}
+.answer-div {
+    margin-top: 1em;
+    font-weight: 400;
+    color: #2a2a2a;
+}
+.show-hide-btn{
+    display: block;
+    background-color: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.6em 0;
+    border-radius: 0.3em;
+}
+.button-con{
+    display: flex;
+    justify-content: flex-end;
+}
+.edit,
+.delete{
+    background-color: transparent;
+    padding: 0.5em;
+    font-size: 16px;
+}
+.edit{
+    color: #2a2a2a;
+}
+.delete {
+    color: red;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    .card-list-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    body{
+       font-size: 14px; 
+    }
+    .card-list-container{
+        grid-template-columns: 1fr;
+        gap: 1.2em;
+    }
+}
+    /* End of Flashcard */
