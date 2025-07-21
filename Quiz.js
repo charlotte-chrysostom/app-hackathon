@@ -1,6 +1,8 @@
 function getQuiz() {
-    const apiUrl=  "https://quizapi.io/api/v1/questions?apiKey=PQx1luiZasPXmyBpBTGOOsFAiuvOVa28vimt8VPd&?category=Linux";
-    const outputElement=document.getElementById('output');
+    const selectelement=document.getElementById('cat');
+    const selectvalue=selectelement.value;
+    const apiUrl=  "https://quizapi.io/api/v1/questions?apiKey=PQx1luiZasPXmyBpBTGOOsFAiuvOVa28vimt8VPd&category="+selectvalue;
+    const outputElement=document.getElementById('quote');
 
     // M
     fetch(apiUrl, {keepalive: true})
@@ -12,8 +14,8 @@ function getQuiz() {
         return response.json();
     })
     .then(data=>{
-        console.log(data);
-        outputElement.textContent=JSON.stringify(data.quote);
+        console.log(data[0]);
+        outputElement.textContent=JSON.stringify(data[0].question);
 
         
     })
