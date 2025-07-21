@@ -1,18 +1,39 @@
 title{
     color: #2c3e50
 }
-h1{
-    color: goldenrod
-}
-h2{
-    color:#3498db;
-    text-align: center;
 
+h2{
+  
+    color:#3498db;
+=======
+    text-align: center;
+    color:goldenrod
 }
 h4{
+    text-align: center;
     color:#3498db
-    text
+}
+p{
+    text-align: center;
+    border-style: dotted;
 }
 
-
+*{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
   
+.search-container{
+    margin-top: 50px;
+    position: relative;
+}
+
+.search-container input{
+    width:300px;
+    height: 25px;
+    font-size: 18px;
+    border-radius: 10px;
+}
